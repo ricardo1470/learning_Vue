@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <form action="" v-on:submit.prevent="saveTask">
+            <input type="text" v-model="newTask">
+            <input type="submit" value="Save">
+        </form>
+        <hr>
+        <ul>
+            <li v-for="task in tasks"> {{ task }} </li>
+        </ul>
+        <pre> {{ $data }}</pre>
+    </div>
+    <!-- development version, includes help warnings in the console -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+
+    <!-- production version, optimized for size and speed
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+</body>
+</html>
