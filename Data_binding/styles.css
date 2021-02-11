@@ -1,0 +1,15 @@
+.user-info {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid;
+    border-radius: 25px;
+    font-family: sans-serif;
+}
+
+.logged-in {
+    background-color: lightgreen;
+}
+
+.logged-out {
+    background-color: tomato;
+}
